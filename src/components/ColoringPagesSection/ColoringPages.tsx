@@ -5,7 +5,6 @@ import CustomButton from '../CustomButton/CustomButton';
 import WaveBorderTop from '../Waveborder/WaveBorderTop';
 import WaveBorderBottom from '../Waveborder/WaveBorderbottom';
 
-
 interface ColoringPage {
   id: string;
   title: string;
@@ -23,7 +22,7 @@ const coloringPages: ColoringPage[] = [
 
 const ColoringPages: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const cardWidth = useBreakpointValue({ base: 250, md: 300 });
+  const cardWidth = useBreakpointValue({ base: 250, md: 300 }) ?? 250; // Provide a default value
 
   const handleSeeMore = () => {
     if (scrollRef.current) {

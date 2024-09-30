@@ -58,7 +58,7 @@ const BitcoinVideoComponent = () => {
         color="#12334C"
         maxWidth={isMobile ? "90%" : isTablet ? "80%" : "600px"}
       >
-        Many have asked the question, "What is Bitcoin?" Few have ever dared to ask, "Who is Bitcoin?"
+       Many have asked the question, &ldquo;What is Bitcoin?&rdquo; Few have ever dared to ask, &ldquo;Who is Bitcoin?&rdquo;
       </Text>
       <CustomButton
         bg="#FFD24C"
