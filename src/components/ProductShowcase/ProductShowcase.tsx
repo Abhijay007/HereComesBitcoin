@@ -3,6 +3,7 @@ import { Box, Heading, Text, Button, Image, Container, Center, useBreakpointValu
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import CustomButton from '../CustomButton/CustomButton';
 
 interface Product {
   id: string;
@@ -57,15 +58,21 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
     >
       <Image src={product.imageUrl} alt={product.name} mb={4} w={imageSize} h={imageSize} objectFit="contain" />
       <Box>
-        <Heading as="h3" size="md" mb={2} textAlign="center">{product.name}</Heading>
-        <Button
-          colorScheme="yellow"
-          variant="solid"
-          width="full"
+        <Heading size="md" mb={2} textAlign="center">{product.name}</Heading>
+        <Center>
+        <CustomButton
+          bg="#FFEFA6"
+          color="#12334C"
+          fontSize="28px"
+          padding="1.7rem 1.9rem"
+          width="fit-content"
+          mb={4}
+          mt={4}
           isDisabled={product.price === 'Coming Soon'}
         >
           {product.price === 'Coming Soon' ? 'Coming Soon' : product.price}
-        </Button>
+        </CustomButton>
+        </Center>
       </Box>
     </Box>
   );
@@ -73,7 +80,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 
 const ProductShowcase: React.FC = () => {
   return (
-    <Container maxW="container.2xl" py={10} px={4} mb={24} bg="gray.50">
+    <Container maxW="container.2xl" py={10} px={4} mb={24} bg="#FFF4EC">
       <Heading
         color="#14253d"
         textAlign="center"
@@ -95,7 +102,7 @@ const ProductShowcase: React.FC = () => {
           fontWeight="400"
           lineHeight="1.5"
         >
-         It&rsquo;s only a matter of time until everything becomes a plushie, but in our case, it took even longer because Bitcoin kept eating our concepts. Grab your hungry guy today.
+          It&rsquo;s only a matter of time until everything becomes a plushie, but in our case, it took even longer because Bitcoin kept eating our concepts. Grab your hungry guy today.
         </Text>
       </Center>
       <Box px={{
@@ -127,7 +134,7 @@ const ProductShowcase: React.FC = () => {
 
         </Swiper>
       </Box>
-      
+
     </Container>
   );
 };

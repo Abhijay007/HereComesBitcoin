@@ -129,7 +129,7 @@ const ColoringPages: React.FC = () => {
         </Flex>
         <Center>
           <Box mt={20} mb={10}>
-        <CustomButton onClick={handleSeeMore} bg="#FFEFA6" color="white" fontSize='32px' padding='1.7rem 1.5rem'>
+        <CustomButton onClick={handleSeeMore} bg="#FFEFA6" color="#0C5156" fontSize='32px' padding='1.7rem 1.5rem'>
           See more
         </CustomButton>
         </Box>

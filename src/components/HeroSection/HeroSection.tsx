@@ -30,7 +30,7 @@ const Hero = () => {
                                 Your Bitcoin Stuff
                             </Heading>
                             <Text mb={10} fontSize="3xl" lineHeight={1.2} color="#13294b" fontWeight="500">
-                                Here Comes Bitcoin is the central resource <br />for all things Bitcoin (mascot, not <br /> currency),including license-free creative <br />assets that
+                                Here Comes Bitcoin is the central resource <br />for all things Bitcoin (mascot, not <br /> currency), including license-free creative <br />assets that
                                 you can use to make whatever <br />
                                 you want.
                             </Text>
@@ -38,7 +38,7 @@ const Hero = () => {
                                 bg="#F7931A"
                                 color="white"
                                 fontSize='30px'
-                                padding='2rem 3rem'
+                                padding='1.9rem 1.5rem'
                                 borderRadius="full"
                             >
                                 Shop Now

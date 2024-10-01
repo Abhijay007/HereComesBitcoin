@@ -1,6 +1,7 @@
 "use client";
 
 import { Box, Flex, Text, Center, Heading, Image } from "@chakra-ui/react";
+import CustomButton from "../CustomButton/CustomButton";
 
 interface GifItem {
   src: string;
@@ -101,6 +102,13 @@ const GifsSection: React.FC = () => {
           ))}
         </Flex>
       </Box>
+      <Center>
+        <Box mb={20}>
+          <CustomButton bg="#F7931A" color="white" fontSize='32px' padding='1.7rem 1.5rem'>
+            Explore HCB Giphy
+          </CustomButton>
+        </Box>
+      </Center>
     </>
   );
 };

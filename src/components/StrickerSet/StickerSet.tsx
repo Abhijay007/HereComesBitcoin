@@ -25,18 +25,18 @@ const StickerSet = () => {
           w={{ base: 'full', md: '40%' }}
         >
           <Heading as="h1" size="2xl" color="navy.700" textAlign={{ base: 'center', md: 'left' }}>
-            Get Stickers Set
+            Make chats stickier
           </Heading>
           <Text fontSize="lg" color="gray.600" textAlign={{ base: 'center', md: 'left' }}>
-            Access HereComesBitcoin stickers on Telegram and Signal and use them in your groups.
+            Orange up your Signal and Telegram chats with our Here Comes Bitcoin sticker set bundles, featuring all your favorite HCB Bitcoins
           </Text>
 
           {/* Buttons for Telegram and Signal */}
-          <HStack spacing={6} w={{ base: 'full', md: 'auto' }} justifyContent={{ base: 'center', md: 'flex-start' }}>
-            <CustomButton bg="#F7931A" color="white" fontSize="20px" padding="1.2rem 2rem">
+          <HStack spacing={10} mt={6} w={{ base: 'full', md: 'auto' }} justifyContent={{ base: 'center', md: 'flex-start' }}>
+            <CustomButton bg="#FFEFA6" color="#0C5156" fontSize="24px" padding="1.7rem 2rem">
               Telegram Stickers
             </CustomButton>
-            <CustomButton bg="#F7931A" color="white" fontSize="20px" padding="1.2rem 2rem">
+            <CustomButton bg="#FFEFA6" color="#0C5156" fontSize="24px" padding="1.7rem 2rem">
               Signal Stickers
             </CustomButton>
           </HStack>

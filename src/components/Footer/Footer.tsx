@@ -11,17 +11,17 @@ const Footer = () => {
         <WaveBorderTop color='#12334C' />
       </Box>
       <Box as="footer" position="relative" bg="#12334C" color="#A6B5C5" pt="40px" >
-        <Container maxW="container.2xl"  px={{
+        <Container maxW="container.2xl" px={{
           base: 6,
           lg: "100px",
-        }}  py={0}>
+        }} py={0}>
           <Grid
             templateColumns={{ base: "1fr", lg: "1fr 2fr" }}
             mt={10}
           >
             <GridItem>
               <Stack spacing={6} width={{ base: "100%", lg: "auto" }}>
-                <Heading fontSize="6xl" fontWeight="medium" color="#A6B5C5">
+                <Heading fontSize="6xl" fontWeight="medium" color="#8ED7E8">
                   Get In Touch
                 </Heading>
                 <Text fontSize="20px" maxW="300px" lineHeight="1.5" color="white" >
@@ -40,7 +40,7 @@ const Footer = () => {
                 </CustomButton>
               </Stack>
               <Stack spacing={6} width={{ base: "100%", lg: "auto" }} mt={8}>
-                <Heading fontSize="6xl" fontWeight="medium" color="#A6B5C5">
+                <Heading fontSize="6xl" fontWeight="medium" color="#8ED7E8">
                   Follow Us
                 </Heading>
                 <Flex>
@@ -60,18 +60,18 @@ const Footer = () => {
                 alignItems={{ base: "flex-start", lg: "flex-start" }}
               >
                 <Stack spacing={4} width={{ base: "100%", lg: "auto" }}>
-                  <Heading fontSize="6xl" fontWeight="medium" color="#A6B5C5" mb={2}>
+                  <Heading fontSize="6xl" fontWeight="medium" color="#8ED7E8" mb={2}>
                     Explore
                   </Heading>
                   <Stack spacing={2}>
                     <NextLink href="/guidelines" passHref>
-                      <Link fontSize="20px">Usage Guidelines</Link>
+                      <Link fontSize="20px" color="white">Usage Guidelines</Link>
                     </NextLink>
                     <NextLink href="/built-with-hcb" passHref>
-                      <Link fontSize="20px">Built With HCB</Link>
+                      <Link fontSize="20px" color="white">Built With HCB</Link>
                     </NextLink>
                     <NextLink href="/collab" passHref>
-                      <Link fontSize="20px">Want To Collab ?</Link>
+                      <Link fontSize="20px" color="white">Want To Collab ?</Link>
                     </NextLink>
                   </Stack>
                 </Stack>
@@ -84,7 +84,7 @@ const Footer = () => {
                   />
                 </Box>
               </Flex>
-              
+
             </GridItem>
 
             <Box display={{ base: "block", lg: "none" }} position="relative" width="100%" height="auto" my={8}>
