@@ -1,23 +1,38 @@
 import React from 'react';
-import { Box, Heading, Text, Flex, Image, useColorModeValue, useBreakpointValue, Center } from '@chakra-ui/react';
+import { Box, Heading, Text, Flex, Image, useBreakpointValue, Center } from '@chakra-ui/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
+// Import the SVG as a React component
+import CircleBackground from '../../../public/assets/PartnersImages/CircleBackground.svg';
+
+// Updated partnersData to include color information
 const partnersData = [
-  { name: 'Shamory', logo: 'SHAmory.png', bgColor: '#E6FFF2' },
-  { name: 'HRF', logo: 'hrf-logo.svg', bgColor: '#FFF5E6' },
-  { name: 'OpenSats', logo: 'opensats-logo.svg', bgColor: '#E6F3FF' },
-  { name: 'Shamory', logo: 'SHAmory.png', bgColor: '#E6FFF2' },
-  { name: 'HRF', logo: 'hrf-logo.svg', bgColor: '#FFF5E6' },
-  { name: 'OpenSats', logo: 'opensats-logo.svg', bgColor: '#E6F3FF' },
+  { name: 'Shamory', logo: 'SHAmory.png', color: '#E6FFF2' },
+  { name: 'HRF', logo: 'HRF.png', color: '#FFF5E6' },
+  { name: 'OpenSats', logo: 'opensats-logo.svg', color: '#E6F3FF' },
+  { name: 'Shamory', logo: 'SHAmory.png', color: '#E6FFF2' },
+  { name: 'HRF', logo: 'HRF.png', color: '#FFF5E6' },
+  { name: 'OpenSats', logo: 'opensats-logo.svg', color: '#E6F3FF' },
 ];
 
-const Partners: React.FC = () => {
+// Create a styled version of the SVG component
+const StyledCircleBackground: React.FC<{ color: string }> = ({ color }) => (
+  <Box
+    as={CircleBackground}
+    sx={{
+      'circle, path': {
+        fill: color,
+      }
+    }}
+  />
+);
 
-  const imageSize = useBreakpointValue({ base: "200px", md: "200px" });
-  const bgSize = useBreakpointValue({ base: "180px", md: "180px" });
+const Partners: React.FC = () => {
+  const imageSize = useBreakpointValue({ base: "220px", md: "210px" });
+  const bgSize = useBreakpointValue({ base: "200px", md: "190px" });
   const containerHeight = useBreakpointValue({ base: "260px", md: "260px" });
 
   return (
@@ -33,7 +48,6 @@ const Partners: React.FC = () => {
       >
         Partners in code
       </Heading>
-
       <Center>
         <Text
           color="#4a5568"
@@ -44,7 +58,7 @@ const Partners: React.FC = () => {
           fontWeight="400"
           lineHeight="1.5"
         >
-          We’re big fans of our big fans. If your brand is good for bitcoin and could benefit from having its own sticker,, we might just Be willing to partner up. So get in touch.
+          We're big fans of our big fans. If your brand is good for bitcoin and could benefit from having its own sticker, we might just be willing to partner up. So get in touch.
         </Text>
       </Center>
       <Swiper
@@ -59,12 +73,12 @@ const Partners: React.FC = () => {
         modules={[Pagination]}
         className="mySwiper"
         breakpoints={{
-          320: { slidesPerView: 1.5, spaceBetween: 5 },  // Show 1 full + a little cut of the next
-          768: { slidesPerView: 2.6, spaceBetween: 15 },  // Show 2 full + partial of the next
-          1024: { slidesPerView: 3.6, spaceBetween: 30 }, // Show 3 full + cut of the next one
+          320: { slidesPerView: 1.3, spaceBetween: 20 },
+          768: { slidesPerView: 2.6, spaceBetween: 15 },
+          1024: { slidesPerView: 3.6, spaceBetween: 30 },
         }}
         style={{
-          overflow: 'hidden',  // Ensure cut-off effect is visible
+          overflow: 'hidden',
         }}
       >
         {partnersData.map((partner, index) => (
@@ -80,12 +94,12 @@ const Partners: React.FC = () => {
                 position="absolute"
                 w={bgSize}
                 h={bgSize}
-                borderRadius="full"
-                bg={partner.bgColor}
                 zIndex={1}
-              />
+              >
+                <StyledCircleBackground color={partner.color} />
+              </Box>
               <Image
-                src={`/assets/${partner.logo}`}
+                src={`/assets/PartnersImages/${partner.logo}`}
                 alt={partner.name}
                 w={imageSize}
                 h={imageSize}
