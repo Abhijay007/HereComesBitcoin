@@ -58,7 +58,7 @@ const Partners: React.FC = () => {
           fontWeight="400"
           lineHeight="1.5"
         >
-          We're big fans of our big fans. If your brand is good for bitcoin and could benefit from having its own sticker, we might just be willing to partner up. So get in touch.
+          We&apos;re big fans of our big fans. If your brand is good for bitcoin and could benefit from having its own sticker, we might just be willing to partner up. So get in touch.
         </Text>
       </Center>
       <Swiper
