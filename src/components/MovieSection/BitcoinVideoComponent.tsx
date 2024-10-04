@@ -26,7 +26,7 @@ const BitcoinVideoComponent = () => {
         left={0}
         right={0}
         height={isMobile ? "50%" : isTablet ? "60%" : "69.5%"}
-        backgroundImage="url('/assets/TheaterStrips.png')"
+        backgroundImage="url('/assets/HereComesBitcoinMovie/TheaterStrips.png')"
         backgroundSize="cover"
         backgroundPosition="center"
         zIndex={1}
@@ -72,7 +72,7 @@ const BitcoinVideoComponent = () => {
         Watch Now
       </CustomButton>
       <Image
-        src={isMobile ? "/assets/bitcoin-characters-mobile.png" : "/assets/bitcoinCharacters.png"}
+        src={isMobile ? "/assets/bitcoin-characters-mobile.png" : "/assets/HereComesBitcoinMovie/BitcoinCharacters.png"}
         alt="Bitcoin characters"
         position="absolute"
         bottom={isMobile ? "-110px" : isTablet ? "-140px" : "-180px"}

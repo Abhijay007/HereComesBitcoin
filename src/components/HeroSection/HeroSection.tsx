@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Box, Flex, Heading, Text, Image, Container } from '@chakra-ui/react';
-import { ColorContext } from '@/app/ColorProvider';
+import { ColorContext } from '@/app/Providers/ColorProvider';
 import CustomButton from '../CustomButton/CustomButton';
 import WaveBorderBottom from '../Waveborder/WaveBorderbottom';
 

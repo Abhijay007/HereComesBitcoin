@@ -48,7 +48,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
         height: "100%", // Set height to match button
         width: "10px",
         backgroundColor: props.bg || "gray.200",
-        maskImage: "url('/assets/ButtonLeftBorder.svg')",
+        maskImage: "url('/assets/CustomButtonAssets/ButtonLeftBorder.svg')",
         maskSize: "contain",
         maskRepeat: "no-repeat",
         maskPosition: "center",
@@ -63,7 +63,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
         height: "100%", // Set height to match button
         width: "10px",
         backgroundColor: props.bg || "gray.200",
-        maskImage: "url('/assets/ButtonRightBorder.svg')",
+        maskImage: "url('/assets/CustomButtonAssets/ButtonRightBorder.svg')",
         maskSize: "contain",
         maskRepeat: "no-repeat",
         maskPosition: "center",

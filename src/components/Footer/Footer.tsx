@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, VStack, Text, Heading, Link, Image, Stack, Container, Grid, GridItem } from "@chakra-ui/react";
+import { Box, Flex, Stack, Text, Heading, Link, Image, Container, Grid, GridItem } from "@chakra-ui/react";
 import NextLink from "next/link";
 import WaveBorderTop from '../Waveborder/WaveBorderTop';
 import CustomButton from '../CustomButton/CustomButton';
@@ -10,7 +10,7 @@ const Footer = () => {
       <Box position="relative" height="100px" zIndex={1}>
         <WaveBorderTop color='#12334C' />
       </Box>
-      <Box as="footer" position="relative" bg="#12334C" color="#A6B5C5" pt="40px" >
+      <Box as="footer" position="relative" bg="#12334C" color="#A6B5C5" pt="40px">
         <Container maxW="container.2xl" px={{
           base: 6,
           lg: "100px",
@@ -24,7 +24,7 @@ const Footer = () => {
                 <Heading fontSize="6xl" fontWeight="medium" color="#8ED7E8">
                   Get In Touch
                 </Heading>
-                <Text fontSize="20px" maxW="300px" lineHeight="1.5" color="white" >
+                <Text fontSize="20px" maxW="300px" lineHeight="1.5" color="white">
                   For shop support, business, and licensing enquiries, please click below to get in touch!
                 </Text>
                 <CustomButton
@@ -43,15 +43,20 @@ const Footer = () => {
                 <Heading fontSize="6xl" fontWeight="medium" color="#8ED7E8">
                   Follow Us
                 </Heading>
-                <Flex>
-                  <Link href="https://youtube.com" isExternal mr={4}>
-                    <Image src="/assets/youtube-icon.svg" alt="YouTube" boxSize="24px" />
-                  </Link>
-                  <Link href="https://discord.com" isExternal>
-                    <Image src="/assets/discord-icon.svg" alt="Discord" boxSize="24px" />
-                  </Link>
+                <Flex direction="column" >
+                  <Flex mb={4}>
+                    <Link href="https://youtube.com" isExternal mr={4}>
+                      <Image src="/assets/youtube-icon.svg" alt="YouTube" boxSize="24px" />
+                    </Link>
+                    <Link href="https://discord.com" isExternal>
+                      <Image src="/assets/discord-icon.svg" alt="Discord" boxSize="24px" />
+                    </Link>
+                  </Flex>
                 </Flex>
               </Stack>
+              <Text mt={20} fontSize="16px" color="#A6B5C5">
+                Copyright @ HereComesBitcoin Ltd.
+              </Text>
             </GridItem>
             <GridItem>
               <Flex
@@ -75,21 +80,20 @@ const Footer = () => {
                     </NextLink>
                   </Stack>
                 </Stack>
-                <Box display={{ base: "none", lg: "block" }} mt={60} mb={8} >
+                <Box display={{ base: "none", lg: "block" }} mt={60} mb={8}>
                   <Image
-                    src="/assets/CatFooter.png"
+                    src="/assets/FooterImages/CatFooter.png"
                     alt="Bitcoin Cat"
                     maxW="680px"
                     ml="auto"
                   />
                 </Box>
               </Flex>
-
             </GridItem>
 
             <Box display={{ base: "block", lg: "none" }} position="relative" width="100%" height="auto" my={8}>
               <Image
-                src="/assets/Cat.png"
+                src="/assets/FooterImages/CatFooter.png"
                 alt="Bitcoin Cat"
                 width="100%"
                 maxW="300px"
@@ -97,7 +101,6 @@ const Footer = () => {
               />
             </Box>
           </Grid>
-
         </Container>
       </Box>
     </Box>

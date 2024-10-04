@@ -61,7 +61,7 @@ const StickerSet = () => {
             mt={{ base: 0, md: '100px' }} // Moves the first image slightly up
           >
             <Image
-              src="/assets/Mobile-preview-One.png" // Your first mobile preview image
+              src="/assets/StrickerSetImages/Mobile-preview-One.png" // Your first mobile preview image
               alt="Telegram chat preview"
               w="100%"
               h="auto"
@@ -80,7 +80,7 @@ const StickerSet = () => {
             mt={{ base: 0, md: '-100px' }} // Moves the second image slightly down
           >
             <Image
-              src="/assets/Mobile-preview-Two.png" // Your second mobile preview image
+              src="/assets/StrickerSetImages/Mobile-preview-Two.png" // Your second mobile preview image
               alt="Signal chat preview"
               w="100%"
               h="auto"

@@ -11,7 +11,7 @@ import BitcoinVideoComponent from "@/components/MovieSection/BitcoinVideoCompone
 import ColoringPages from "@/components/ColoringPagesSection/ColoringPages";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/HeroSection/HeroSection";
-import { ColorProvider } from "./ColorProvider";
+import { ColorProvider } from "./Providers/ColorProvider";
 
 const Home: React.FC = () => {
   return (
@@ -20,7 +20,6 @@ const Home: React.FC = () => {
         <Header />
         <Hero />
       </ColorProvider>
-
       <Box
         px={{
           base: 6,
@@ -30,7 +29,6 @@ const Home: React.FC = () => {
         <AssetsSection />
       </Box>
       <StickerSet />
-   
       <Box
         px={{
           base: 6,
@@ -42,7 +40,6 @@ const Home: React.FC = () => {
         <Partners />
 
       </Box>
-     
       <ProductShowcase />
       <BitcoinVideoComponent />
       <ColoringPages />

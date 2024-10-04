@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Box, Flex, Button, Image, IconButton, VStack, useDisclosure, HStack } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import { ColorContext } from '@/app/ColorProvider';
+import { ColorContext } from '@/app/Providers/ColorProvider';
 import CustomButton from '../CustomButton/CustomButton';
 
 const Header = () => {
@@ -23,7 +23,7 @@ const Header = () => {
             >
                 <Flex align="center" mr={5}>
                     <Image 
-                        src="assets/logo.svg" 
+                        src="assets/HeaderImages/logo.svg" 
                         alt="HereComesBitcoin Logo" 
                         h={{ base: "30px", md: "40px", lg: "50px" }} 
                     />

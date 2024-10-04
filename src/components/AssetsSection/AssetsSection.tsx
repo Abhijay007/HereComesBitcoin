@@ -1,7 +1,7 @@
 "use client";
 
 import { Box, Flex, Text, Center, Heading } from "@chakra-ui/react";
-import Asset from "../../components/Asset";
+import Asset from "./Asset";
 
 interface AssetItem {
   src: string;
