@@ -1,6 +1,7 @@
 import React from 'react';
-import { Box, Flex, Stack, Text, Heading, Link, Image, Container, Grid, GridItem } from "@chakra-ui/react";
+import { Box, Flex, Stack, Text, Heading, Link, Image, Container, Grid, GridItem , Icon} from "@chakra-ui/react";
 import NextLink from "next/link";
+import { FaYoutube, FaDiscord } from 'react-icons/fa';
 import WaveBorderTop from '../Waveborder/WaveBorderTop';
 import CustomButton from '../CustomButton/CustomButton';
 
@@ -43,15 +44,13 @@ const Footer = () => {
                 <Heading fontSize="6xl" fontWeight="medium" color="#8ED7E8">
                   Follow Us
                 </Heading>
-                <Flex direction="column" >
-                  <Flex mb={4}>
-                    <Link href="https://youtube.com" isExternal mr={4}>
-                      <Image src="/assets/youtube-icon.svg" alt="YouTube" boxSize="24px" />
-                    </Link>
-                    <Link href="https://discord.com" isExternal>
-                      <Image src="/assets/discord-icon.svg" alt="Discord" boxSize="24px" />
-                    </Link>
-                  </Flex>
+                <Flex mb={4}>
+                  <Link href="https://youtube.com" isExternal mr={6}>
+                    <Icon as={FaYoutube} boxSize="40px" color="white" />
+                  </Link>
+                  <Link href="https://discord.com" isExternal>
+                    <Icon as={FaDiscord} boxSize="40px" color="white" />
+                  </Link>
                 </Flex>
               </Stack>
               <Text mt={20} fontSize="16px" color="#A6B5C5">

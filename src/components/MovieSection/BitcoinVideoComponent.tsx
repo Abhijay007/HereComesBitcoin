@@ -9,7 +9,7 @@ const BitcoinVideoComponent = () => {
   return (
     <Box
       position="relative"
-      bg="#E6F4EA"
+      bg="#C8EBD3"
       mt={isMobile ? 16 : isTablet ? 24 : 32}
       mb={isMobile ? "220px" : isTablet ? "250px" : "280px"}
       minHeight={isMobile ? "auto" : isTablet ? "auto" : "100vh"}
@@ -44,7 +44,7 @@ const BitcoinVideoComponent = () => {
       >
         <Box
           as="iframe"
-          src="https://www.youtube.com/embed/your-video-id"
+          src="https://www.youtube.com/embed/DvHUOr8ruMw"
           width="100%"
           height="100%"
           border="none"
@@ -58,7 +58,7 @@ const BitcoinVideoComponent = () => {
         color="#12334C"
         maxWidth={isMobile ? "90%" : isTablet ? "80%" : "600px"}
       >
-       Many have asked the question, &ldquo;What is Bitcoin?&rdquo; Few have ever dared to ask, &ldquo;Who is Bitcoin?&rdquo;
+        Many have asked the question, &ldquo;What is Bitcoin?&rdquo; Few have ever dared to ask, &ldquo;Who is Bitcoin?&rdquo;
       </Text>
       <CustomButton
         bg="#FFD24C"
@@ -72,7 +72,7 @@ const BitcoinVideoComponent = () => {
         Watch Now
       </CustomButton>
       <Image
-        src={isMobile ? "/assets/bitcoin-characters-mobile.png" : "/assets/HereComesBitcoinMovie/BitcoinCharacters.png"}
+        src={isMobile ? "/assets/HereComesBitcoinMovie/bitcoin-characters-mobile.png" : "/assets/HereComesBitcoinMovie/bitcoin-characters-desktop.png"}
         alt="Bitcoin characters"
         position="absolute"
         bottom={isMobile ? "-110px" : isTablet ? "-140px" : "-180px"}

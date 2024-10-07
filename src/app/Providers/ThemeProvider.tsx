@@ -33,7 +33,27 @@ export function Providers({ children }: { children: React.ReactNode }) {
       <ChakraProvider theme={theme}>{children}</ChakraProvider>
       <Global
         styles={css`
+          
           @import url('https://fonts.googleapis.com/css2?family=Acme&family=Comic+Neue:wght@300;400;700&display=swap');
+          
+          html, body {
+          overflow - y: hidden;
+          overflow-y: auto;
+          scrollbar-width: none; /* For Firefox */
+          -ms-overflow-style: none;  /* For IE and Edge */
+          }
+
+          ::-webkit-scrollbar {
+          display: none; /* For Chrome, Safari, and Opera */
+          }
+
+          /* Disable text selection globally */
+          * {
+            user-select: none;
+            -webkit-user-select: none; /* For Safari */
+            -moz-user-select: none; /* For Firefox */
+            -ms-user-select: none; /* For IE10+ */
+          }
         `}
       />
     </CacheProvider>
