@@ -11,7 +11,7 @@ const BitcoinVideoComponent = () => {
       position="relative"
       bg="#C8EBD3"
       mt={isMobile ? 16 : isTablet ? 24 : 32}
-      mb={isMobile ? "220px" : isTablet ? "250px" : "280px"}
+      mb={isMobile ? "70px" : isTablet ? "250px" : "280px"}
       minHeight={isMobile ? "auto" : isTablet ? "auto" : "100vh"}
       width="100%"
       display="flex"
@@ -67,7 +67,7 @@ const BitcoinVideoComponent = () => {
         py={isMobile ? 2 : isTablet ? 3 : 4}
         px={isMobile ? 4 : isTablet ? 6 : 8}
         mt={isMobile ? 5 : isTablet ? 7 : 10}
-        mb={isMobile ? 18 : isTablet ? 24 : 36}
+        mb={isMobile ? 24 : isTablet ? 24 : 36}
       >
         Watch Now
       </CustomButton>
@@ -75,7 +75,7 @@ const BitcoinVideoComponent = () => {
         src={isMobile ? "/assets/HereComesBitcoinMovie/bitcoin-characters-mobile.png" : "/assets/HereComesBitcoinMovie/bitcoin-characters-desktop.png"}
         alt="Bitcoin characters"
         position="absolute"
-        bottom={isMobile ? "-110px" : isTablet ? "-140px" : "-180px"}
+        bottom={isMobile ? "-50px" : isTablet ? "-140px" : "-180px"}
         left={0}
         right={0}
         width="100%"

@@ -4,11 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-// Import the SVG as a React component
 import CircleBackground from '../../../public/assets/PartnersImages/CircleBackground.svg';
 
-// Updated partnersData to include color information
 const partnersData = [
   { name: 'Shamory', logo: 'SHAmory.png', color: '#E6FFF2' },
   { name: 'HRF', logo: 'HRF.png', color: '#FFF5E6' },
@@ -18,7 +15,7 @@ const partnersData = [
   { name: 'OpenSats', logo: 'opensats-logo.svg', color: '#E6F3FF' },
 ];
 
-// Create a styled version of the SVG component
+
 const StyledCircleBackground: React.FC<{ color: string }> = ({ color }) => (
   <Box
     as={CircleBackground}
